@@ -54,7 +54,7 @@ class OauthToken implements OauthTokenInterface
         $oauthResponseTransfer = $this->oauthFacade->processAccessTokenRequest($oauthRequestTransfer);
         if (!$oauthResponseTransfer->getIsValid()) {
             /**
-             * @see https://tools.ietf.org/html/rfc6749#section-5.2
+             * @see OAUTH 2.0 RFC https://tools.ietf.org/html/rfc6749#section-5.2
              */
             $response->setStatusCode(400);
 
@@ -76,7 +76,7 @@ class OauthToken implements OauthTokenInterface
         }
 
         /**
-         * @see https://tools.ietf.org/html/rfc6749#section-5.1
+         * @see OAUTH 2.0 RFC https://tools.ietf.org/html/rfc6749#section-5.1
          */
         return $response->setData([
             'access_token' => $oauthResponseTransfer->getAccessToken(),
