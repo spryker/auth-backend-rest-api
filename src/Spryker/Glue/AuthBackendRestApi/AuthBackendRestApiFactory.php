@@ -10,9 +10,9 @@ namespace Spryker\Glue\AuthBackendRestApi;
 use Spryker\Glue\AuthBackendRestApi\Dependency\Facade\AuthBackendRestApiToOauthFacadeInterface;
 use Spryker\Glue\AuthBackendRestApi\Processor\OauthToken\OauthToken;
 use Spryker\Glue\AuthBackendRestApi\Processor\OauthToken\OauthTokenInterface;
-use Spryker\Glue\Kernel\Backend\Factory\AbstractBackendFactory;
+use Spryker\Glue\Kernel\Backend\AbstractBackendApiFactory;
 
-class AuthBackendRestApiFactory extends AbstractBackendFactory
+class AuthBackendRestApiFactory extends AbstractBackendApiFactory
 {
     /**
      * @return \Spryker\Glue\AuthBackendRestApi\Processor\OauthToken\OauthTokenInterface
