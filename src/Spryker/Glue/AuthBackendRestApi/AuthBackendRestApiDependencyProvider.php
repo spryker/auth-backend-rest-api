@@ -8,7 +8,7 @@
 namespace Spryker\Glue\AuthBackendRestApi;
 
 use Spryker\Glue\AuthBackendRestApi\Dependency\Facade\AuthBackendRestApiToOauthFacadeBridge;
-use Spryker\Glue\Kernel\AbstractBundleDependencyProvider;
+use Spryker\Glue\Kernel\Backend\AbstractBundleDependencyProvider;
 use Spryker\Glue\Kernel\Container;
 
 /**
